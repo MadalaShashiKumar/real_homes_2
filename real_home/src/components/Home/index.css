@@ -3,7 +3,6 @@
     padding: 25px;
     text-align: center;
     color: #1DB2FF;
-
 }
 
 .find-sub-container h2 {
@@ -54,7 +53,7 @@
     background-color: #fff;
     padding: 30px;
     position: absolute;
-    top: 117%;
+    top: 119%;
     left: 10%;
     border-radius: 30px;
     box-shadow: 0px 1px 4px 0px gray;
@@ -82,7 +81,7 @@
 }
 
 .discover-containier {
-    padding: 150px 0px;
+    padding: 120px 0px 50px 0px;
 }
 
 .h3 {
@@ -144,7 +143,8 @@
 }
 
 .each-price:hover {
-    color: red;
+    color: rgb(235, 120, 120);
+    transition: ease 0.3s all;
 }
 
 .each-img-main-container {
@@ -210,4 +210,299 @@
 .logo-img-logo {
     margin-right: 3px;
     color: #1DB2FF;
+}
+
+.merrick-container {
+    background-color: #e7f6fd;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.merrick-img {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.merrick-ul {
+    padding: 0px;
+}
+
+.merrick-li {
+    width: 180px;
+    height: 120px;
+    margin: 10px;
+    list-style-type: none;
+}
+
+.merrick-li-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.merrick-li-img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.merrick-text-containier {
+    padding: 30px;
+}
+
+.button-11 {
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 5px 30px;
+    border: none;
+    margin-right: 15px;
+}
+
+.button-11:hover {
+    color: white;
+    background-color: black;
+    transition: ease 0.3s all;
+}
+
+.button-22 {
+    background-color: #1DB2FF;
+    border-radius: 30px;
+    padding: 5px 30px;
+    border: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.button-22:hover {
+    background-color: black;
+    color: white;
+    transition: ease 0.3s all;
+}
+
+.button-33 {
+    background-color: orange;
+    border-radius: 30px;
+    padding: 5px 30px;
+    border: none;
+    color: white;
+    margin-right: 15px;
+}
+
+.button-33:hover {
+    background-color: black;
+    color: white;
+    transition: ease 0.3s all;
+}
+
+.merrick-text-heading {
+    margin: 20px 0px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1.4px;
+}
+
+.merrick-text-heading:hover {
+    color: #1DB2FF;
+    transition: ease 0.3s all;
+}
+
+.merrick-text-price {
+    color: #1DB2FF;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.merrick-text-paragraph {
+    line-height: 25px;
+    letter-spacing: 1.4px;
+    color: gray;
+}
+
+
+
+.slick-prev:before,
+.slick-next:before {
+    background-color: white;
+    border-radius: 55px;
+    color: #1DB2FF !important;
+
+}
+
+.slick-container {
+    background-color: transparent;
+    padding: 50px;
+    width: 100%;
+    height: 50vh;
+}
+
+.slider-button {
+    width: 100%;
+    background-color: #E7F6FD;
+    height: 100%;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content-heading {
+    color: #1DB2FF;
+    font-weight: 600;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.slider-content-para {
+    color: gray;
+    font-size: 18px;
+}
+
+.slider-content-heading1 {
+    color: #1DB2FF;
+}
+
+.slider-content-para1 {
+    color: gray;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.customer-lovers-us-heading {
+    letter-spacing: 5px;
+}
+
+.discover-prop-container {
+    margin-top: 20%;
+}
+
+.discover-prop-sub-container {
+    position: relative;
+    height: 43vh;
+    cursor: pointer;
+}
+
+.discover-prop-img {
+    width: 100%;
+    background-size: cover;
+    height: 90%;
+    position: absolute;
+    border-radius: 15px;
+
+}
+
+.discover-prop-text {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    transition: ease 0.4s all;
+    border-radius: 10px;
+
+}
+
+.discover-prop-sub-container:hover .discover-prop-text {
+    opacity: 0.9;
+}
+
+.discover-prop-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+}
+
+.discover-prop-btn:hover {
+    background-color: #1DB2FF;
+    color: white;
+    transition: ease 0.3s all;
+}
+
+.discover-prop-text1-container {
+    position: absolute;
+    background-color: red;
+    padding: 0px 30px;
+    color: black;
+    background-color: whitesmoke;
+    font-weight: 600;
+    border-radius: 10px;
+    top: 70%;
+    left: 25%;
+    box-shadow: 0px 1px 4px 0px gray;
+}
+
+.discover-prop-text2 {
+    background-color: #1DB2FF;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 85%;
+    left: 25%;
+    padding: 0px 20px;
+}
+
+.discover-prop-text2-para {
+    margin: 0px;
+}
+
+.letest-news-container,
+.partners-container {
+    margin-top: 100px;
+}
+
+.letest-news-li {
+    list-style-type: none;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.letest-news-img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.letest-news-date {
+    color: gray;
+}
+
+.letest-news-title {
+    font-weight: 600;
+}
+
+.letest-news-roomtype {
+    color: #1DB2FF;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.partners-li {
+    background-color: transparent;
+    list-style-type: none;
+    height: 130px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 0px gray;
+}
+
+.partners-img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.partners-li:hover {
+    border: 2px solid #1DB2FF;
+    transition: ease 0.3s all;
 }

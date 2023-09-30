@@ -1,0 +1,56 @@
+.footer-container {
+    background-color: #E7F6FD;
+    padding: 50px 30px;
+}
+
+.footer-logos {
+    color: #1DB2FF;
+    font-size: 30px;
+    margin-left: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.footer-need-help-container {
+    background-color: #cceaf8;
+    padding: 40px 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-need-help-heading {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-weight: 600;
+}
+
+.footer-need-help-button {
+    padding: 12px 20px;
+    background-color: #fff;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.footer-need-help-button:hover {
+    background-color: #1DB2FF;
+    color: #fff;
+}
+
+.footer-need-help-button-p {
+    margin: 0px;
+    padding-top: 1px;
+}
+
+.footer-need-help-icons {
+    font-size: 25px;
+    color: #1DB2FF;
+    margin-right: 8px;
+}
+
+.footer-need-help-button:hover .footer-need-help-icons {
+    color: #fff;
+}
