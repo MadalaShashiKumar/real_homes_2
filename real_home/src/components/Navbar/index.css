@@ -1,16 +1,17 @@
 .nav-container {
-    background-color: transparent;
+    background-color: #fff;
     width: 100%;
-    height: 12vh;
+    height: 80px;
     align-items: center;
+
 }
 
-.nav-ul li {
+.nav-li {
     margin-right: 40px;
     list-style-type: none;
     font-weight: 600;
 }
 
-.nav-ul li:hover {
+.nav-li:hover {
     color: #1DB2FF;
 }

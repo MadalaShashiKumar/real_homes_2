@@ -5,6 +5,10 @@
     color: #1DB2FF;
 }
 
+.font {
+    margin-top: 80px;
+}
+
 .find-sub-container h2 {
     font-weight: 600;
 }
@@ -44,7 +48,6 @@
     width: 100%;
     height: 100vh;
     background-size: cover;
-    margin-top: 5px;
 
 }
 
@@ -102,10 +105,13 @@
 .each-li {
     list-style-type: none;
     padding: 8px;
+
 }
 
 .each-li img {
     border-radius: 10px;
+    background-size: cover;
+
 }
 
 .each-para {
@@ -127,16 +133,19 @@
 
 .each-para-location {
     color: gray;
+    margin-bottom: 10px;
 }
 
 .each-family {
     color: black;
     font-weight: 600;
+    margin-bottom: 10px;
+    color: #1DB2FF;
 }
 
 .each-price {
-    color: #1DB2FF;
-    font-size: 20px;
+    color: black;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     width: 40%;

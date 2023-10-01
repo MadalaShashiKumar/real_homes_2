@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { ImLocation2 } from 'react-icons/im'
-import { AiFillCamera, AiOutlineHeart } from 'react-icons/ai'
+import { AiFillCamera } from 'react-icons/ai'
 import { BsFillCameraReelsFill } from 'react-icons/bs'
 
 const DiscoverLatestProperties = [
@@ -59,6 +59,7 @@ const DiscoverLatestProperties = [
         price: '$3,100 Monthly',
     },
 ]
+
 const HomeMerrickWay = [
     {
         id: 1,
@@ -187,7 +188,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="home-img-container">
-                <img className="home-img" src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/spacejoy-scaled.jpg" alt="home" />
+                <img className="home-img" src="https://ultra-realhomes.b-cdn.net/wp-content/uploads/2022/06/office-working-space-scaled.jpg" alt="home" />
                 <div className="home-img-sub-container d-flex justify-content-between">
                     <div>
                         <h4 className="home-img-heading">Villa on Hollywood Boulevard</h4>

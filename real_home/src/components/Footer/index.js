@@ -3,6 +3,7 @@ import './index.css'
 import { BiLogoFacebookCircle, BiLogoInstagramAlt, BiLogoYoutube, BiSolidCopyright, BiPhone, BiLogoWhatsapp, BiMailSend } from 'react-icons/bi'
 import { AiFillTwitterCircle } from 'react-icons/ai'
 
+
 const Footer = () => {
     return (
         <div className="footer-container mt-5">
