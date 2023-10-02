@@ -1,0 +1,317 @@
+.each-prop-ul {
+    padding: 0px;
+}
+
+.each-prop-sub-main-img {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.each-prop-ul-1 {
+    height: 120px;
+    padding: 0px;
+}
+
+.each-prop-li-1 {
+    list-style-type: none;
+    padding-right: 10px;
+    padding-top: 10px;
+
+}
+
+.each-prop-li-1-img {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.each-prop-li-1-img:hover {
+    opacity: 0.7;
+}
+
+.each-prop-sub-text {
+    position: absolute;
+    bottom: -8%;
+    left: 4%;
+}
+
+.sale-btn {
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 4px 13px;
+    border: none;
+    margin-right: 15px;
+}
+
+.sale-btn:hover {
+    background-color: #1DB2FF;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+.featured-btn {
+    background-color: #1DB2FF;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 4px 13px;
+    border: none;
+    margin-right: 15px;
+}
+
+.hot-btn {
+    background-color: #e65252;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 14px;
+    padding: 4px 13px;
+    border: none;
+    margin-right: 15px;
+}
+
+.each-prop-title {
+    color: #fff;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.each-prop-price {
+    color: #fff;
+    background-color: #1DB2FF;
+    padding: 5px 10px;
+    font-weight: 600;
+    margin-top: 13px;
+    border-radius: 30px;
+}
+
+.each-prop-location-icon {
+    color: #1DB2FF;
+    background-color: transparent;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.each-prop-location {
+    color: #ffffffbf;
+    font-weight: 600;
+}
+
+.overview-heading {
+    font-weight: 600;
+    margin-right: 80px;
+}
+
+.property-id {
+    color: gray;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+.bedroom-container {
+    background-color: #e7f6fd;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+.bedroom-para {
+    font-weight: 600;
+    font-size: 17px;
+    color: gray;
+    margin: 5px;
+}
+
+.bedroom-para2 {
+    font-size: 18px;
+    margin: 0px;
+    color: rgb(74, 72, 72);
+}
+
+.bedroom-para-icon {
+    color: #1DB2FF;
+    font-size: 30px;
+    margin-left: 4px;
+    padding: 0px;
+}
+
+.description-container,
+.additional-container,
+.note-container,
+.features-container,
+.floor-Plans-container,
+.property-video-container,
+.comment-container {
+    margin-top: 60px;
+    padding-right: 10px;
+}
+
+.description-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.description-para {
+    color: gray;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.additional-heading {
+    letter-spacing: 0.5px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.additional-paragraph {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.note-para {
+    color: rgb(67, 67, 67);
+    font-size: 17px;
+    background-color: #e7f6fd;
+    padding: 25px 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.features-ul {
+    padding: 0px;
+}
+
+.features-li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+}
+
+.features-icon {
+    font-size: 23px;
+    margin-right: 5px;
+    color: #1DB2FF;
+    background-color: #e7f6fd;
+}
+
+.floor-Plans-sub-container {
+    background-color: #cceaf8;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.floor-Plans-sub-button {
+    background-color: #fff;
+    padding: 10px 50px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+.floor-Plans-sub-button:hover {
+    background-color: #1DB2FF;
+    color: #fff;
+    transition: ease 0.3s all;
+}
+
+.bedroom-apartment-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.bedroom-apartment-img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+.bedroom-apartment-hed {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.floor-Plans-sub-button-color {
+    background-color: #1DB2FF;
+    color: white;
+}
+
+.comment-sub-container {
+    background-color: #cceaf8;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.comment-label {
+    display: block;
+    color: gray;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+.comment-card {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-right: 10px;
+}
+
+.comment-card-icon {
+    font-size: 30px;
+    margin-right: 10px;
+    color: gray;
+}
+
+.comment-card-textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.comment-card-input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    outline: none;
+}
+
+.comment-btn {
+    background-color: #1db2ff;
+    color: white;
+    padding: 8px 30px;
+    font-size: 17px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid #1DB2FF;
+    margin-top: 30px;
+}
+
+.comment-btn:hover {
+    background-color: #fff;
+    color: #1DB2FF;
+    transition: ease 0.3s all;
+}
+
+.slick-container1 {
+    padding: 25px;
+    padding-top: 0px;
+}
+
+.similar-heading {
+    font-weight: 600;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}

@@ -95,7 +95,7 @@ const AllProperties = () => {
     return (
         <div className="container-fluid">
             <Navbar />
-            <div className="all-properties-property">
+            <div className="all-properties-property mt-4">
                 <h3 className="h3">Latest Properties</h3>
                 <p className="p1">Newest Properties Around You</p>
                 <ul className="row d-flex each-container">
