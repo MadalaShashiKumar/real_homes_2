@@ -203,7 +203,7 @@ const Home = () => {
             <div className="discover-containier">
                 <h3 className="h3">Discover Latest Properties</h3>
                 <p className="p">Newest Properties Around You</p>
-                <ul className="row d-flex each-container">
+                <ul className="d-flex row each-container">
                     {DiscoverLatestProperties.map((each) => {
                         return (
                             <li className="col-xl-4 each-li" key={each.id}>

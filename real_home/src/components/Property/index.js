@@ -9,8 +9,8 @@ import { PiGarageBold } from 'react-icons/pi'
 import { CiCalendarDate } from 'react-icons/ci'
 import { TiChartAreaOutline } from 'react-icons/ti'
 import { IoIosResize } from 'react-icons/io'
-import { BsCheckCircle, BsFillCameraReelsFill } from 'react-icons/bs'
-import { BiComment, BiUserCircle } from 'react-icons/bi'
+import { BsCheckCircle, BsFillCameraReelsFill, BsTelephone, BsPrinter } from 'react-icons/bs'
+import { BiComment, BiUserCircle, BiLogoWhatsapp } from 'react-icons/bi'
 import { AiOutlineMail, AiOutlineGlobal, AiFillCamera } from 'react-icons/ai'
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -44,22 +44,14 @@ const SingleProperty = [
             'Lawn',
             'Marble Floors'
         ],
-        agent1: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Melissa-William-210x210.jpg',
-            },
-            {
-                name: 'Melissa William'
-            }
-        ],
-        agent2: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/John-David.jpg',
-            },
-            {
-                name: 'John David'
-            }
-        ]
+        agent1: {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Melissa-William-210x210.jpg',
+            name: 'Melissa William'
+        },
+        agent2: {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/John-David.jpg',
+            name: 'John David'
+        }
     },
     {
         id: 2,
@@ -89,22 +81,14 @@ const SingleProperty = [
             'Jog Path',
             'Swimming Pool'
         ],
-        agent1: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Nathan-James-210x210.jpg'
-            },
-            {
-                name: 'Nathan James'
-            }
-        ],
-        agent2: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Melissa-William-210x210.jpg',
-            },
-            {
-                name: 'Melissa William'
-            }
-        ]
+        agent1: {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Nathan-James-210x210.jpg',
+            name: 'Nathan James'
+        },
+        agent2: {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Melissa-William-210x210.jpg',
+            name: 'Melissa William'
+        }
     },
     {
         id: 3,
@@ -138,22 +122,16 @@ const SingleProperty = [
             'Lawn',
             'Swimming Pool'
         ],
-        agent1: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Alice-Brian-1-210x210.jpg',
-            },
-            {
-                name: 'Alice Brian'
-            }
-        ],
-        agent2: [
-            {
-                img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Nathan-James-210x210.jpg',
-            },
-            {
-                name: 'Nathan James'
-            }
-        ]
+        agent1:
+        {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Alice-Brian-1-210x210.jpg',
+            name: 'Alice Brian'
+        },
+        agent2:
+        {
+            img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Nathan-James-210x210.jpg',
+            name: 'Nathan James'
+        }
     },
     {
         id: 4,
@@ -548,8 +526,8 @@ const Property = () => {
                     </li>
                 ))}
             </ul>
-            <div className="bg-danger">
-                <div className="bg-light col-xl-8 p-1">
+            <div className="d-flex">
+                <div className="main-content-container col-xl-8 p-1">
                     <div className="overview-container">
                         <div className="d-flex mt-5">
                             <h4 className="overview-heading">Overview</h4>
@@ -728,6 +706,105 @@ const Property = () => {
 
                     </div>
                 </div>
+                <div className="agent-container col-xl-4 p-1">
+                    <>
+                        {eachProperty.agent1 &&
+                            <div className="agent-sub-container-1 d-flex">
+                                <div className="agent-img-container col-xl-5 p-3 text-end">
+                                    <img className="agent-img" src={eachProperty.agent1.img} alt="img" />
+                                    <div className="text-end">
+                                        <p className="agent-text-para">Office</p>
+                                        <p className="agent-text-para">Mobile</p>
+                                        <p className="agent-text-para">Fax</p>
+                                        <p className="agent-text-para">WhatsApp</p>
+                                        <p className="agent-text-para">Email</p>
+                                    </div>
+                                </div>
+                                <div className="col-xl-7 p-2">
+                                    <p className="agent-title">Agent</p>
+                                    <h4 className="agent-heading">{eachProperty.agent1.name}</h4>
+                                    <p className="agent-view-my">View My Listings</p>
+                                    <div className="agent-contact-container">
+                                        <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-222-333-4444</p>
+                                        <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-234-456-7892</p>
+                                        <p className="agent-contact-paragraph"><BsPrinter className="agent-contact-icon" /> 1-333-444-5555</p>
+                                        <p className="agent-contact-paragraph"><BiLogoWhatsapp className="agent-contact-icon" /> 1-222-333-4422</p>
+                                        <p className="agent-contact-paragraph"><AiOutlineMail className="agent-contact-icon" /> robot@inspirythemes.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <form className="agent-form-container">
+                            <div className="agent-input-container">
+                                <BiUserCircle className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Name" />
+                            </div>
+                            <div className="agent-input-container">
+                                <AiOutlineMail className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Email" />
+                            </div>
+                            <div className="agent-input-container">
+                                <BsTelephone className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Phone" />
+                            </div>
+                            <div className="agent-input-container d-flex">
+                                <BiComment className="agent-input-logo" />
+                                <br />
+                                <textarea rows={7} className="agent-input-textarea" placeholder="Message" />
+                            </div>
+                            <button className="agent-send-btn" type="button">Send Message</button>
+                        </form>
+                    </>
+                    <>
+                        {eachProperty.agent2 &&
+                            <div className="agent-sub-container-1 d-flex">
+                                <div className="agent-img-container col-xl-5 p-3 text-end">
+                                    <img className="agent-img" src={eachProperty.agent2.img} alt="img" />
+                                    <div className="text-end">
+                                        <p className="agent-text-para">Office</p>
+                                        <p className="agent-text-para">Mobile</p>
+                                        <p className="agent-text-para">Fax</p>
+                                        <p className="agent-text-para">WhatsApp</p>
+                                        <p className="agent-text-para">Email</p>
+                                    </div>
+                                </div>
+                                <div className="col-xl-7 p-2">
+                                    <p className="agent-title">Agent</p>
+                                    <h4 className="agent-heading">{eachProperty.agent2.name}</h4>
+                                    <p className="agent-view-my">View My Listings</p>
+                                    <div className="agent-contact-container">
+                                        <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-222-333-4444</p>
+                                        <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-234-456-7892</p>
+                                        <p className="agent-contact-paragraph"><BsPrinter className="agent-contact-icon" /> 1-333-444-5555</p>
+                                        <p className="agent-contact-paragraph"><BiLogoWhatsapp className="agent-contact-icon" /> 1-222-333-4422</p>
+                                        <p className="agent-contact-paragraph"><AiOutlineMail className="agent-contact-icon" /> robot@inspirythemes.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <form className="agent-form-container">
+                            <div className="agent-input-container">
+                                <BiUserCircle className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Name" />
+                            </div>
+                            <div className="agent-input-container">
+                                <AiOutlineMail className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Email" />
+                            </div>
+                            <div className="agent-input-container">
+                                <BsTelephone className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Phone" />
+                            </div>
+                            <div className="agent-input-container d-flex">
+                                <BiComment className="agent-input-logo" />
+                                <br />
+                                <textarea rows={7} className="agent-input-textarea" placeholder="Message" />
+                            </div>
+                            <button className="agent-send-btn" type="button">Send Message</button>
+                        </form>
+                    </>
+                </div>
+
             </div>
             <div className="similar-container">
                 <h4 className="similar-heading">Similar Properties</h4>

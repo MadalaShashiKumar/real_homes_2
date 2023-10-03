@@ -315,3 +315,101 @@
     margin-left: 30px;
     margin-bottom: 20px;
 }
+
+.agent-img {
+    border-radius: 100px;
+    width: 90%;
+    margin-bottom: 20px;
+    margin-left: auto;
+}
+
+.agent-text-para {
+    font-weight: 600;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.agent-title {
+    color: gray;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.agent-heading {
+    margin: 0px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.agent-view-my {
+    color: #1DB2FF;
+    font-weight: 600;
+}
+
+.agent-contact-icon {
+    font-size: 25px;
+    margin-right: 5px;
+    color: #1DB2FF;
+}
+
+.agent-contact-paragraph {
+    margin-bottom: 18px;
+}
+
+.agent-contact-container {
+    margin-top: 45px;
+}
+
+.agent-sub-container-1 {
+    margin-top: 60px;
+}
+
+.agent-form-container {
+    background-color: #cceaf8;
+    padding: 5px;
+    border-radius: 30px;
+
+}
+
+.agent-input-container {
+    background-color: #FFFFFF;
+    padding: 13px 20px;
+    border-radius: 30px;
+    margin: 15px;
+}
+
+.agent-input-input {
+    border: none;
+    border-bottom: 2px solid #f0f0f0;
+    width: 90%;
+    outline: none;
+}
+
+.agent-input-logo {
+    font-size: 25px;
+    margin-right: 9px;
+    color: gray;
+}
+
+.agent-input-textarea {
+    border: none;
+    width: 90%;
+    outline: none;
+}
+
+.agent-send-btn {
+    width: 93%;
+    padding: 10px 20px;
+    border: 2px solid #1DB2FF;
+    border-radius: 30px;
+    margin: 15px;
+    background-color: #1DB2FF;
+    color: #ffffff;
+}
+
+.agent-send-btn:hover {
+    background-color: #ffffff;
+    color: #1DB2FF;
+    transition: ease 0.3s all;
+}

@@ -14,7 +14,9 @@ const Navbar = () => {
                     <Link to='/all/properties' className="nav-link">Real Estate</Link>
                 </li>
                 <li className="pt-2 nav-li">Property Single</li>
-                <li className="pt-2 nav-li">Blog</li>
+                <li className="pt-2 nav-li">
+                    <Link to='/blogs' className="nav-link">Blogs</Link>
+                </li>
                 <li className="pt-2 nav-li"> Contact</li>
                 <li className="pt-2 nav-li">1-800-555-4321</li>
             </ul>
