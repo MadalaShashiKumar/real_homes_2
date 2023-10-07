@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Property from './components/Property';
 import AllProperties from './components/AllProperties';
 import AllBlogs from './components/AllBlogs';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path='/all/properties' element={<AllProperties />} />
           <Route exact path='/all/properties/:id' element={<Property />} />
           <Route exact path='/blogs' element={<AllBlogs />} />
+          <Route exact path='/contact' element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

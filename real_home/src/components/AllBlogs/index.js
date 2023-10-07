@@ -2,6 +2,10 @@ import React from 'react'
 import './index.css'
 import Navbar from '../Navbar'
 import { CiCalendarDate } from 'react-icons/ci'
+import { BsTelephone, BsPrinter } from 'react-icons/bs'
+import { BiComment, BiUserCircle, BiLogoWhatsapp } from 'react-icons/bi'
+import { AiOutlineMail } from 'react-icons/ai'
+import Footer from '../Footer'
 
 const Blogs = [
     {
@@ -38,12 +42,31 @@ const Blogs = [
     },
 ]
 
+const Agents = [
+    {
+        img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Melissa-William-210x210.jpg',
+        name: 'Melissa William'
+    },
+    {
+        img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/John-David.jpg',
+        name: 'John David'
+    },
+    {
+        img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Nathan-James-210x210.jpg',
+        name: 'Nathan James'
+    },
+    {
+        img: 'https://ultra-realhomes.b-cdn.net/wp-content/uploads/2020/05/Alice-Brian-1-210x210.jpg',
+        name: 'Alice Brian'
+    },
+]
+
 const AllBlogs = () => {
     return (
         <div className='container-fluid'>
             <Navbar />
-            <div className='news-main-container bg-danger mt-3'>
-                <div className='news-container-1 col-xl-8 bg-light p-2' >
+            <div className='news-main-container mt-3 d-flex'>
+                <div className='news-container-1 col-xl-8 p-2' >
                     <h3><b>News</b></h3>
                     <p className='news-para'>Check out market updates</p>
                     <ul className='p-0'>
@@ -67,7 +90,63 @@ const AllBlogs = () => {
                         })}
                     </ul>
                 </div>
+                <div className='col-xl-4 pt-4'>
+                    <>
+                        {Agents && Agents.map((each) => {
+                            return (
+                                <>
+                                    <div className="agent-sub-container-1 d-flex">
+                                        <div className="agent-img-container col-xl-5 p-3 text-end">
+                                            <img className="agent-img" src={each.img} alt="img" />
+                                            <div className="text-end">
+                                                <p className="agent-text-para">Office</p>
+                                                <p className="agent-text-para">Mobile</p>
+                                                <p className="agent-text-para">Fax</p>
+                                                <p className="agent-text-para">WhatsApp</p>
+                                                <p className="agent-text-para">Email</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-xl-7 p-2">
+                                            <p className="agent-title">Agent</p>
+                                            <h4 className="agent-heading">{each.name}</h4>
+                                            <p className="agent-view-my">View My Listings</p>
+                                            <div className="agent-contact-container">
+                                                <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-222-333-4444</p>
+                                                <p className="agent-contact-paragraph"><BsTelephone className="agent-contact-icon" /> 1-234-456-7892</p>
+                                                <p className="agent-contact-paragraph"><BsPrinter className="agent-contact-icon" /> 1-333-444-5555</p>
+                                                <p className="agent-contact-paragraph"><BiLogoWhatsapp className="agent-contact-icon" /> 1-222-333-4422</p>
+                                                <p className="agent-contact-paragraph"><AiOutlineMail className="agent-contact-icon" /> robot@inspirythemes.com</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })}
+                        <h5 className='m-3 mt-5'><b>Contact Us</b></h5>
+                        <form className="agent-form-container mt-4">
+                            <div className="agent-input-container">
+                                <BiUserCircle className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Name" />
+                            </div>
+                            <div className="agent-input-container">
+                                <AiOutlineMail className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Email" />
+                            </div>
+                            <div className="agent-input-container">
+                                <BsTelephone className="agent-input-logo" />
+                                <input type="text" className="agent-input-input" placeholder="Phone" />
+                            </div>
+                            <div className="agent-input-container d-flex">
+                                <BiComment className="agent-input-logo" />
+                                <br />
+                                <textarea rows={7} className="agent-input-textarea" placeholder="Message" />
+                            </div>
+                            <button className="agent-send-btn" type="button">Send Message</button>
+                        </form>
+                    </>
+                </div>
             </div>
+            <Footer />
         </div>
     )
 }

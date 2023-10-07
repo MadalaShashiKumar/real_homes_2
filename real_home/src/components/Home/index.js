@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './index.css'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -206,25 +207,27 @@ const Home = () => {
                 <ul className="d-flex row each-container">
                     {DiscoverLatestProperties.map((each) => {
                         return (
-                            <li className="col-xl-4 each-li" key={each.id}>
-                                <div className="each-img-main-container">
-                                    <img className="each-img" src={each.img} alt="img" />
-                                    <div className="each-img-positons-container">
-                                        <button className="button-1" type="button">For Sale</button>
-                                        <button className="button-2" type="button"><AiFillCamera /> 2</button>
-                                        <button className='button-3' type="button"><BsFillCameraReelsFill /> 4</button>
+                            <Link className="col-xl-4 nav-link" to={`/all/properties/${each.id}`}>
+                                <li className="each-li" key={each.id}>
+                                    <div className="each-img-main-container">
+                                        <img className="each-img" src={each.img} alt="img" />
+                                        <div className="each-img-positons-container">
+                                            <button className="button-1" type="button">For Sale</button>
+                                            <button className="button-2" type="button"><AiFillCamera /> 2</button>
+                                            <button className='button-3' type="button"><BsFillCameraReelsFill /> 4</button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="each-para">
-                                    <h6>{each.title}</h6>
-                                    <div className="d-flex">
-                                        <ImLocation2 className="each-para-location-logo" />
-                                        <p className="each-para-location">{each.location}</p>
+                                    <div className="each-para">
+                                        <h6>{each.title}</h6>
+                                        <div className="d-flex">
+                                            <ImLocation2 className="each-para-location-logo" />
+                                            <p className="each-para-location">{each.location}</p>
+                                        </div>
+                                        <p className="each-family">{each.familyType}</p>
+                                        <p className="each-price">{each.price}</p>
                                     </div>
-                                    <p className="each-family">{each.familyType}</p>
-                                    <p className="each-price">{each.price}</p>
-                                </div>
-                            </li>
+                                </li>
+                            </Link>
                         )
                     })}
                 </ul>
@@ -248,7 +251,7 @@ const Home = () => {
                         <button className="button-22" type="button">Featured</button>
                         <button className="button-33" type="button">Hot</button>
                     </div>
-                    <h2 className="merrick-text-heading">Home in Merrick Way</h2>
+                    <h2 className="merrick-text-heading"><Link className="nav-link" to="/all/properties">Home in Merrick Way</Link></h2>
                     <div className="d-flex">
                         <ImLocation2 className="each-para-location-logo" />
                         <p className="each-para-location">Merrick Way, Miami, FL 33134, USA</p>
